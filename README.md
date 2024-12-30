@@ -1,6 +1,6 @@
 # GPT2Trainer: Advanced Training Module for GPT-2
 
-GPT2Trainer is a comprehensive training utility for GPT-2 models, offering advanced features like device selection, gradient accumulation, checkpoint management, and extensive logging to facilitate efficient and reliable training processes. The model trainer has features for optimized training efficiency, including automatic hardware detection prioritizing NVIDIA GPU with fallback options like Intel OpenVINO and CPU. It customizes tokenizers by adding padding tokens and resizing model embeddings. Training is enhanced with manual gradient accumulation for larger batch simulation, gradient clipping for stability, and a learning rate scheduler with warm-up and linear decay. It supports validation through optional dataset splitting, robust checkpoint management for progress saving and resumption, and best model selection based on validation loss.
+The model trainer has features for optimized training efficiency, including automatic hardware detection prioritizing NVIDIA GPU with fallback options like Intel OpenVINO and CPU. It customizes tokenizers by adding padding tokens and resizing model embeddings. Training is enhanced with manual gradient accumulation for larger batch simulation, gradient clipping for stability, and a learning rate scheduler with warm-up and linear decay. It supports validation through optional dataset splitting, robust checkpoint management for progress saving and resumption, and best model selection based on validation loss.
 
 ## Features
 
