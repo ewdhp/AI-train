@@ -43,20 +43,3 @@ if __name__ == "__main__":
     print("Training model...")
     trainer = GPT2Trainer()
     trainer.train_manual_grad(dataset)
-
-    # Load the trained model
-    print("Loading trained model...")
-    tokenizer = GPT2Tokenizer.from_pretrained('./gpt2_tokenizer')
-    model = GPT2LMHeadModel.from_pretrained('./gpt2_model')
-
-    # Generate a prompt
-    print("Generating prompt...\n\n")
-    prompt = "Is 9.11 greater than 9.9?\n\n"
-    inputs = tokenizer(prompt, return_tensors="pt")
-    outputs = model.generate(
-        inputs.input_ids, 
-        attention_mask=inputs.attention_mask, 
-        max_length=50, 
-        num_return_sequences=1)
-    
-    print(tokenizer.decode(outputs[0], skip_special_tokens=True))
