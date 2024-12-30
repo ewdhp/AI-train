@@ -32,7 +32,7 @@ def load_local_dataset(dataset_dir):
 if __name__ == "__main__":
 
     # Download and store the dataset
-    dataset_name = "prithivMLmods/Deepthink-Reasoning"
+    dataset_name = "dataset_name"
     data_dir = "./gpt2-train/data"
     dataset_dir = os.path.join(data_dir, dataset_name.replace('/', '_'))
 
