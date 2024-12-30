@@ -42,34 +42,6 @@ The model trainer has features for optimized training efficiency, including auto
 - Saves the trained model and tokenizer for later use.
 - Ensures compatibility with the Hugging Face Transformers library.
 
-## Requirements
-- Python 3.7+
-- PyTorch
-- Transformers library (Hugging Face)
-- Optional: Intel OpenVINO runtime
-
-## Project Structure
-
-```
-gpt2-training-project
-├── src
-│   ├── train.py          # Main script for training the GPT-2 model
-│   ├── model.py          # Defines the GPT-2 model architecture
-│   └── utils.py          # Utility functions for data preprocessing and evaluation
-├── data
-│   └── dataset.csv       # Dataset used for training the GPT-2 model
-├── docker
-│   ├── Dockerfile        # Instructions for building the Docker image
-│   └── entrypoint.sh     # Entry point script for the Docker container
-├── kubernetes
-│   ├── deployment.yaml    # Kubernetes deployment configuration
-│   └── service.yaml       # Kubernetes service configuration
-├── requirements.txt       # Python dependencies for the project
-├── .dockerignore          # Files to ignore when building the Docker image
-├── .gitignore             # Files to ignore in Git
-└── README.md              # Project documentation
-```
-
 ## Contributing
 
 Feel free to submit issues or pull requests for improvements or bug fixes.
